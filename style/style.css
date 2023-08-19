@@ -94,20 +94,23 @@
 
   }
 
-  /* Your existing CSS rules... */
 
 .header {
     background: black;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     
 }
 
-.contact-info {
-    font-size: 25px;
+.contact-info{
+    font-size: 30px;
     color: #333;
 }
 
+.contact-info a{
+  color: white;
+  font-size: 30px;
+}
 .contact-info p {
     margin: 5px;
     color: white;
@@ -119,7 +122,7 @@
 
 @media (max-width: 768px) {
     .contact-info {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
@@ -128,7 +131,7 @@
 .centered-section {
   text-align: center;
   padding: 40px;
-  background-image: url(../images/obras.jpg); /* Optional background color */
+  background-image: url(../images/foto1.jpg); /* Optional background color */
   background-size: cover; /* Adjust the background size */
   background-position: center center; 
 }
@@ -164,7 +167,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   padding: 40px;
 }
 
@@ -199,8 +202,6 @@
   text-align: center;
   padding: 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8); /* Lower opacity black background */
-  border-radius: 10px;
 }
 
 .image-container img {
@@ -208,7 +209,7 @@
   height: auto;
   display: block;
   object-fit: cover;
-  filter: brightness(90%);
+  filter: brightness(50%);
 }
 
 .image-link:hover .image-container {
@@ -233,7 +234,8 @@
 }
 
 .phone:hover{
-  background-color: green;
+  background-color: white;
+  color:black;
   border-radius: 5px;
 }
 
