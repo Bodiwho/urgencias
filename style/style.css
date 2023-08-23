@@ -63,7 +63,7 @@
   }
   @media (max-width: 858px){
     .checkbtn{
-      display: block;
+      display: none;
     }
     ul{
       position: fixed;
@@ -97,7 +97,7 @@
 
 .header {
     background: black;
-    padding: 20px 0;
+    padding: 5px 0;
     text-align: center;
     
 }
@@ -109,7 +109,7 @@
 
 .contact-info a{
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 .contact-info p {
     margin: 5px;
@@ -122,7 +122,7 @@
 
 @media (max-width: 768px) {
     .contact-info {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -131,13 +131,14 @@
 .centered-section {
   text-align: center;
   padding: 40px;
-  background-image: url(../images/foto1.jpg); /* Optional background color */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/foto1.jpg);
   background-size: cover; /* Adjust the background size */
   background-position: center center; 
+
 }
 
 .centered-element {
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
   display: inline-block;
   max-width: 300px; 
@@ -156,9 +157,9 @@
   color: #555;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .centered-element {
-      max-width: 100%;
+      max-width: 599px;
   }
 }
 
@@ -251,7 +252,9 @@ footer{
 footer .content{
   max-width: 1350px;
   margin: auto;
-  padding: 20px;
+  padding: 15px;
+  padding-bottom: 80px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -260,6 +263,7 @@ footer .content p,a{
   color: #fff;
   font-size: 20px;
 }
+
 footer .content .box{
   width: 33%;
   transition: all 0.4s ease;
@@ -284,52 +288,10 @@ footer .content .middle{
 }
 footer .content .middle a{
   line-height: 32px;
-  font-size: 20px;
+  font-size: 40px;
 }
-footer .content .right input[type="text"]{
-  height: 45px;
-  width: 100%;
-  outline: none;
-  color: #d9d9d9;
-  background: #000;
-  border-radius: 5px;
-  padding-left: 10px;
-  font-size: 17px;
-  border: 2px solid #222222;
-}
-footer .content .right input[type="submit"]{
-  height: 42px;
-  width: 100%;
-  font-size: 20px;
-  color: #d9d9d9;
-  background: #eb2f06;
-  outline: none;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  margin-top: 12px;
-  border: 2px solid #eb2f06;
-  transition: all 0.3s ease-in-out;
-}
-.content .right input[type="submit"]:hover{
-  background: none;
-  color:  #eb2f06;
-}
-footer .content .media-icons a{
-  font-size: 16px;
-  height: 45px;
-  width: 45px;
-  display: inline-block;
-  text-align: center;
-  line-height: 43px;
-  border-radius: 5px;
-  border: 2px solid #222222;
-  margin: 30px 5px 0 0;
-  transition: all 0.3s ease;
-}
-.content .media-icons a:hover{
-  border-color: #eb2f06;
-}
+
+
 footer .bottom{
   width: 100%;
   text-align: right;
@@ -337,13 +299,13 @@ footer .bottom{
   padding: 0 40px 5px 0;
 }
 footer .bottom a{
-  color: #eb2f06;
+  color: white;
 }
 footer a{
   transition: all 0.3s ease;
 }
 footer a:hover{
-  color: #eb2f06;
+  color: white;
 }
 @media (max-width:1100px) {
   footer .content .middle{
